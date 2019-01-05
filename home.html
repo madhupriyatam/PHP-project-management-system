@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+<link rel="stylesheet" href="style.css">
+<style>
+.w3-tangerine {
+    font-family: "Tangerine", serif;
+}
+
+</style>
+</head>
+<body bgcolor="#FFD700">
+
+<table>
+<tr>
+<td>
+<img src="1.png" height="200" width="200">
+</td>
+<td>
+	<div class="topnav" id="myTopnav">
+
+  <a href="faq.html"> FAQ </a>
+  <a href="contact_us.html">CONTACT US </a> 
+  <a href="registration.html">REGISTRATION</a>
+  <a href="login.html"> LOGIN</a>
+  <a href="home.html"> HOME </a>
+  
+</div>
+</td>
+</tr>
+</table>
+
+
+<br>
+<br>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="img1.jpg" style="width:100%">
+
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="img2.jpg" style="width:100%">
+
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="img3.jpg" style="width:100%">
+
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<br>
+<br>
+
+		<center>
+<div class="w3-container w3-tangerine w3-black">
+
+  <p class="w3-xxlarge">" Let SOMEONE See Through Your EYES What YOU Have Seen.. DONATE ORGANS  "</p>
+</div>		
+   
+			</center>	
+</body>
+</html> 
